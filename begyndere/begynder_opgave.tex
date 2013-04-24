@@ -7,43 +7,24 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-\title{{\Huge Calculus}\\ En meget hurtig opsummering}
+\title{{\Huge Calculus}\\ Udvalgte historier}
 \date{\today}
-\author{Jonas Camillus Jeppesen\thanks{jojep07@student.sdu.dk} \\
-		Allan Grønhøj Hansen\thanks{alhan08@student.sdu.dk}}
+\author{Jonas Camillus Jeppesen\thanks{jojep07@student.sdu.dk}}
 
 \begin{document}
 \maketitle
 \newpage
 
-\section{uge 1}
-\begin{enumerate}
-	\item Minimalt eksempel
-	\item Overall skriftstørrelse
-	\item Non-ascii
-	\item Section og subsection
-	\item Maketitle
-	\item Indholdsfortegnelse
-	\item Bable
-	\item ref og label 
-	\item begin end equation
-\end{enumerate}
-
-\section{uge 2}
-\begin{enumerate}
-	\item Lister (sublist)
-	\item Align
-	\item Matricer
-	\item Spalter
-	\item Tabeller
-	\item Figurer
-	\item include input
-	\item bibliografi
-\end{enumerate}
+\tableofcontents
 \newpage
 
 \section{Introduktion}
-Calculus er det matematiske studium af ændringer, på samme måde som geometri er det matematiske studium af former. 
+Calculus er det matematiske studium af ændringer, på samme måde som geometri er det matematiske studium af former.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{newton_and_leibniz}
+	\caption{YEEEEEEAAAAAAHHHHHH!}
+\end{figure}
 
 \section{Differentiation}
 Differentiation er et af de to store emner inden for calculus. Det handler om hvordan funktioner ændrer sig når deres input ændres. Et mål for dette er den \emph{aflede} af en funktion. 
@@ -58,7 +39,7 @@ Denne brøk kaldes \emph{differenskvotienten}. Den aflede af en funktion i samme
 m = \lim_{h\to0}\frac{f(x_0+h) - f(x_0)}{h}
 \end{equation}
 Denne grænse kaldes \emph{diffenskoefficienten}.  Figur \ref{fig:secanttangent} viser en funktion med en tangentlinie og to sekantlinier. $m$ kaldes for den aflede af $f(x)$ i punktet $x_0$. 
-\begin{figure}[b]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.8\textwidth, clip, trim=0 7.8cm 0 6cm]{secant}
 	\caption{Afbildning af $f(x)=x^2$ med en tangent i punktet $x=0.5$ (grøn) og to sekantlinier (blå) med $h=0.5, 1.0$. Hældningen af sekantlinierne ses at gå mod hældningen af tangentlinien når $h$ bliver mindre.}
@@ -82,9 +63,13 @@ Hvis vi sætter $a=x+h$ og $b=x$, hvilket betyder at $a-b=x+h-x=h$, kan vi komme
 \frac{d}{dx}x^n &= \lim_{h\to0}\frac{h((x+h)^{n-1} + (x+h)^{n-2}x + \cdots + (x+h)x^{n-2} + x^{n-1})}{h}\notag \\
                 &= \lim_{h\to0}\left(\underbrace{(x+h)^{n-1} + (x+h)^{n-2}x + \cdots + (x+h)x^{n-2} + x^{n-1}}_
                    {n\text{ led som alle giver } x^{n-1}\text{ for } h\to0}\right)\notag \\
-                &= nx^{n-1}\label{eq:generalpowerfunc}
+\frac{d}{dx}x^n &= nx^{n-1}\label{eq:generalpowerfunc}
 \end{align}
 Ligning \eqref{eq:generalpowerfunc} kan udvides til at gælle negative eksponenter og rationelle eksponenter vha. andre differentiationsregneregler.
 
+\section{Integration}
+Integration er det andet store emne i calculus og det inverse af differentiation. 
+\subsection{Bestemte integraler}
 
+\subsection{Ubestemt integraler}
 \end{document}
